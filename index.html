@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <!-- <script src="C:\Users\Admin\Downloads\script.js"></script> -->
+</head>
+<body>
+    <div class="background">
+        <div class="title">
+            <h1>Tic Tac Game</h1>
+        </div>
+        <div id="next-player">
+            <!-- Player <span class="display-player, playerX">X</span>'s turn -->
+            Click any cell to start the game
+        </div>
+        <div class="container">
+            <table >
+                <tbody>
+                    <tr>
+                        <td class="cell playerX" onclick="playerMove(this)" ></td>
+                        <td class="cell playerX" onclick="playerMove(this)" ></td>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                        <td class="cell playerX" onclick="playerMove(this)"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="result"></div>
+        <section class="button">
+            <button id="reset" onclick="reset()">Reset</button>
+        </section>
+    </div>
+</body>
+</html>
+
